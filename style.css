@@ -1,0 +1,124 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    padding: 30px;
+}
+
+/* layout of the page */
+
+.page .header
+{
+    grid-area: header;
+}
+
+.page .nav-links
+{
+    grid-area: nav;
+}
+
+.page .story-1
+{
+    grid-area: arc-1;
+}
+
+.page .story-2
+{
+    grid-area: arc-2;
+}
+
+.page .story-3
+{
+    grid-area: arc-3;
+}
+
+.page .story-4
+{
+    grid-area: arc-4;
+}
+
+.page .story-5
+{
+    grid-area: arc-5;
+}
+
+.page
+{
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "arc-1 arc-2 arc-3"
+        "arc-4 arc-5 arc-5";
+}
+
+.page .title-page
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+.page .nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border: 3px solid black;
+    padding: 30px;
+    margin: 0;
+}
+
+.page .nav-links .site-section .section-link
+{
+    text-decoration: none;
+    /* font-family: "Futura"; */
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.page .nav-links .site-section .section-link:hover
+{
+    text-decoration: underline;
+}
+
+.page .story
+{
+    padding: 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.page .story .article-title
+{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.page .story .article-title span
+{
+    text-transform: uppercase;
+}
+
+.page .story .article-image
+{
+    display: block;
+    margin: 0 auto;
+    max-height: 250px;
+}
+
+.page .story-3, .story-5
+{
+    border-right: 3px solid black;
+}
